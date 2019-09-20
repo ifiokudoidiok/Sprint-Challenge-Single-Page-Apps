@@ -38,7 +38,7 @@ export default function CharacterList() {
       setCharacters([]);
     };
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, [search.name, search.gender, search.species, search.status, search.type]);
+  }, [search.name, search.gender, search.species]);
 
   const characterList = searchResults.length > 0 ? searchResults : characters;
   return (
